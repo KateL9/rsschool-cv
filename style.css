@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.whole-page {
+	margin: 0 300px;
+	display: flex;
+}
+
+.container {
+	display: flex;
+}
+
+.side {
+	flex: 40%;
+	padding: 10px;
+	height: auto;
+	background-color: rgb(30, 30, 30);
+	color: rgb(239, 239, 239);
+	border-right: 5px solid rgb(178, 127, 0);
+}
+
+.square {
+	width: 5.5em;
+	height: 5.5em;
+	transform: rotate(45deg);
+	overflow: hidden;
+	margin: 27%;
+	border: 7px solid black;
+	outline: #B27F00 solid 7px;
+}
+
+img {
+	max-width: 100%;
+	transform: rotate(-45deg) scale(1.42);
+}
+
+.contacts ul a {
+	text-decoration: none;
+	color: rgb(239, 239, 239);;
+}
+
+h2{
+	color: rgb(178, 127, 0);
+}
+
+.main h2 {
+	border: 2px solid black;
+	padding: 7px;
+	text-align: center;
+}
+ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	flex-direction: column;
+/*	flex-wrap: wrap;*/
+}
+.progress-bar {
+	display: inline-block;
+	width: 40%;
+	height: 10px;
+	background-color: #515151;
+	float: right;
+	margin-right: 25px;
+}
+.progress-bar>div {
+	background-color: rgb(178, 127, 0);
+	width: 100%;
+	height: 10px;
+}
+.progress-bar .english {
+	width: 50%;
+}
+
+.progress-bar .js {
+	width: 20%;
+}
+
+.progress-bar .html-css {
+	width: 80%;
+}
+
+.progress-bar .git {
+	width: 40%;
+}
+
+.progress-bar .sql {
+	width: 30%;
+}
+
+.progress-bar .vs-code {
+	width: 30%;
+}
+
+.progress-bar .jenkins {
+	width: 10%;
+}
+
+/*.contacts {
+	margin-top: 40%;
+}
+*/
+.main {
+	flex: 60%;
+	padding: 20px 10px 2px 30px;
+	background-color: rgb(245, 245, 245);
+	border-left: 5px solid black; 
+}
+
+.job-position {
+	font-style: italic;
+}
+
+h1+div {
+	margin-top: -20px;
+}
+
+.company-name {
+	display: inline;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.company-name + div {
+	float: right;
+	font-weight: bold;
+}
+
+.job-title {
+	padding: 5px 0;
+}
+
+.footer {
+	margin: 0 300px;
+	height: 20px;
+	background-color: rgb(178, 127, 0);
+}
+
+@media screen and (max-width: 850px) {
+	.whole-page {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	
+	.footer {
+		margin: 0 auto;
+	}
+
+	.square {
+		margin: 27% 40%;
+	}
+}
